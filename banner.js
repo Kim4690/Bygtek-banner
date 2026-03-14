@@ -37,7 +37,7 @@
 
   var img = document.createElement("img");
 
-  img.src = "banner.jpg";
+  img.src = new URL("banner.jpg", document.currentScript.src);
   img.style.width = "100%";
   img.style.height = "100%";
   img.style.objectFit = "cover";
